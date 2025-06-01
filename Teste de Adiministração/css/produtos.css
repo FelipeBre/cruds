@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+th {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+td {
+    color: #2c3e50;
+}
+
+tr:not(:last-child) td {
+    border-bottom: 1px solid #e0e6ed;
+}
+
+tr:hover {
+    background-color: rgba(255, 126, 95, 0.05);
+    transform: translateY(-1px);
+    transition: all 0.2s ease;
+}
+
+tr {
+    transition: all 0.2s ease;
+}
+
+.button {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(255, 126, 95, 0.3);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    box-shadow: 0 6px 12px rgba(255, 126, 95, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Efeito para a primeira e última célula da tabela */
+td:first-child, th:first-child {
+    padding-left: 25px;
+}
+
+td:last-child, th:last-child {
+    padding-right: 25px;
+}

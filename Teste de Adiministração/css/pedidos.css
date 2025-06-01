@@ -1,0 +1,89 @@
+body {
+    background: linear-gradient(135deg, #f8f4ff 0%, #f0e9ff 100%);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #5a2d9a;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(90, 45, 154, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+th {
+    background: linear-gradient(135deg, #7b3ad8 0%, #5a2d9a 100%);
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    border-bottom: 1px solid #e8e3f3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #f5f0ff;
+    transform: translateX(5px);
+}
+
+tr:nth-child(even) td {
+    background-color: rgba(248, 244, 255, 0.5);
+}
+
+tr:nth-child(even):hover td {
+    background-color: #f0e9ff;
+}
+
+.button {
+    background: linear-gradient(135deg, #7b3ad8 0%, #5a2d9a 100%);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(90, 45, 154, 0.3);
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #8a4ae0 0%, #6a37b0 100%);
+    box-shadow: 0 4px 8px rgba(90, 45, 154, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Efeito para destacar a linha quando o mouse passa sobre um botão */
+tr:hover .button {
+    transform: translateY(-2px);
+}
